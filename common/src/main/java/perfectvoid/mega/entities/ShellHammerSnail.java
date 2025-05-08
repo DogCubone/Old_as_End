@@ -6,9 +6,6 @@ import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.data.DataTracker;
-import net.minecraft.entity.data.TrackedData;
-import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.MobEntity;
@@ -64,12 +61,6 @@ public class ShellHammerSnail extends PassiveEntity {
     }
 
     @Override
-    public void handleStatus(byte status) {
-        if (status == 1) this.attackState.start(this.age);
-        super.handleStatus(status);
-    }
-
-    @Override
     public void tick() {
         super.tick();
 
@@ -90,8 +81,9 @@ public class ShellHammerSnail extends PassiveEntity {
     }
 
     @Override
-    public int getXpToDrop() {
-        return random.nextBetween(2, 4);
+    public void handleStatus(byte status) {
+        if (status == 1) this.attackState.start(this.age);
+        super.handleStatus(status);
     }
 
     @Override //Places the mucus right when the snail takes damage (from any source)
@@ -121,6 +113,11 @@ public class ShellHammerSnail extends PassiveEntity {
     @Override //This is what makes you be able to walk on the snail, isn't it cool?
     public boolean isCollidable() {
         return this.isAlive();
+    }
+
+    @Override
+    public int getXpToDrop() {
+        return random.nextBetween(2, 4);
     }
 
     @Override
@@ -159,7 +156,7 @@ public class ShellHammerSnail extends PassiveEntity {
 
         @Override
         protected void attack(LivingEntity target, double squaredDistance) {
-            if (this.mob.getTarget().isInRange(this.mob, 1.6f) && this.getCooldown() <= 0) {
+            if (target.isInRange(this.mob, 1.6f) && this.getCooldown() <= 0) {
                 this.resetCooldown();
                 this.mob.swingHand(Hand.MAIN_HAND);
                 this.mob.tryAttack(target);
