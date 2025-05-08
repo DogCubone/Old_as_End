@@ -2,20 +2,16 @@ package perfectvoid.mega.others;
 
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Item;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.Lazy;
 import perfectvoid.mega.Registers.BlocksAndItemsRegister;
 import perfectvoid.mega.old_as_end;
-
-import java.util.function.Supplier;
 
 public enum ArmorMaterials implements ArmorMaterial {
 
     OLD_END_PLATE("old_end_plated", 15, new int[] {0, 4, 3, 1}, 9, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
-            () -> Ingredient.ofItems(new Item[]{BlocksAndItemsRegister.OLD_END_PLATE.get()}));
+            Ingredient.ofItems(BlocksAndItemsRegister.OLD_END_PLATE.get()));
 
     private final String name;
     private final int durabilityMultiplier;
@@ -24,9 +20,10 @@ public enum ArmorMaterials implements ArmorMaterial {
     private final SoundEvent equipSound;
     private final float toughness;
     private final float knockbackResistance;
-    private final Lazy<Ingredient> repairIngredientSupplier;
+    private final Ingredient repairIngredient;
 
-    ArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier repairIngredientSupplier) {
+    ArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound,
+                   float toughness, float knockbackResistance, Ingredient repairIngredientSupplier) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;
@@ -34,7 +31,7 @@ public enum ArmorMaterials implements ArmorMaterial {
         this.equipSound = equipSound;
         this.toughness = toughness;
         this.knockbackResistance = knockbackResistance;
-        this.repairIngredientSupplier = new Lazy(repairIngredientSupplier);
+        this.repairIngredient = repairIngredientSupplier;
     }
 
     private static final int[] baseDurability = {10, 15, 13, 10};
@@ -56,7 +53,7 @@ public enum ArmorMaterials implements ArmorMaterial {
     }
 
     public Ingredient getRepairIngredient() {
-        return this.repairIngredientSupplier.get();
+        return this.repairIngredient;
     }
 
     public String getName() {

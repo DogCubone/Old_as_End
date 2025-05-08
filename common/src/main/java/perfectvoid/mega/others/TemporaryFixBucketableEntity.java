@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 import java.util.Optional;
 
 
-//Yes, this is just a copy but with a single value changed.
+//Yes, this is just a copy of the original but with a single value changed. I'll make my own later but... not really willing to change this for now
 public interface TemporaryFixBucketableEntity {
     boolean isFromBucket();
 

@@ -64,6 +64,7 @@ public class ShellHammerSnail extends PassiveEntity {
     public void tick() {
         super.tick();
 
+        //Ensures that animations are only handled on the client side of things
         if (this.getWorld().isClient) tickAnimation();
         else if (this.hasStatusEffect(StatusEffects.LEVITATION))
             placeMucus(this.getWorld());
@@ -75,6 +76,7 @@ public class ShellHammerSnail extends PassiveEntity {
             this.idleState.start(this.age);
         } else --this.idleTimeout;
 
+        //Handles the texture animation... don't make questions, it just works.
         if (this.animationTick >= 16) {
             this.animationTick = 0;
         } else ++this.animationTick;

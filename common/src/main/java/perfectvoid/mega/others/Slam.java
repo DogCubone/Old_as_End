@@ -15,7 +15,7 @@ public class Slam extends Enchantment {
 
     public int getMinPower(int level) {
         return 5 + (level - 1) * 8;
-    }
+    } //I still need to change this later.
 
     public int getMaxPower(int level) {
         return super.getMinPower(level) + 50;

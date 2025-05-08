@@ -3,20 +3,18 @@ package perfectvoid.mega.others;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-import java.util.function.Supplier;
-
 public enum Materials implements ToolMaterial {
 
-    Shell(4, 250, 8.0f, 2.0f, 10, Ingredient::empty);
+    Shell(4, 250, 8.0f, 2.0f, 10, Ingredient.empty());
 
     private final int miningLevel;
     private final int durability;
     private final float MiningSpeedMultiplier;
     private final float damage;
     private final int enchantmentValue;
-    private final Supplier<Ingredient> repairIngredient;
+    private final Ingredient repairIngredient;
 
-    Materials(int miningLevel, int durability, float speed, float damage, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
+    Materials(int miningLevel, int durability, float speed, float damage, int enchantmentValue, Ingredient repairIngredient) {
         this.miningLevel = miningLevel;
         this.durability = durability;
         this.MiningSpeedMultiplier = speed;
@@ -52,6 +50,6 @@ public enum Materials implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return this.repairIngredient.get();
+        return this.repairIngredient;
     }
 }
