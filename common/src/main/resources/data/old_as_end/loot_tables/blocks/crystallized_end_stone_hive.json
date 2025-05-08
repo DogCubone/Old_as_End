@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:copy_nbt",
+                  "include": [
+                    "minecraft:bees"
+                  ],
+                  "source": "block_entity",
+                  "ops": [
+                    {
+                      "source": "storedBees",
+                      "target": "BlockEntityType.EndBeeHiveEntity",
+                      "op": "replace"
+                    },
+                    {
+                      "source": "ticksUntilBeeLeaves",
+                      "target": "BlockEntityType.EndBeeHiveEntity",
+                      "op": "replace"
+                    }
+                  ],
+                  "conditions": []
+                },
+                {
+                  "block": "old_as_end:crystallized_end_stone_hive",
+                  "function": "minecraft:copy_state",
+                  "properties": [
+                    "honey_amount"
+                  ]
+                }
+              ],
+              "name": "old_as_end:crystallized_end_stone_hive"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "old_as_end:crystallized_end_stone_hive"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "old_as_end:block/small_chorus_flower",
+    "particle": "old_as_end:block/small_chorus_flower"
+  },
+  "render_type": "cutout"
+}

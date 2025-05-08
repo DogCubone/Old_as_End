@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "old_as_end:ultra_powered_strange_mucus_block"
+    },
+    "title": {
+      "translate": "advancements.gotta_go_fast.title"
+    },
+    "description": {
+      "translate": "advancements.gotta_go_fast.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "none": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "old_as_end:ultra_powered_strange_mucus_block"
+      }
+    }
+  },
+  "parent": "old_as_end:calm_down"
+}

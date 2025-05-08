@@ -1,0 +1,83 @@
+{
+  "item.old_as_end.shell_hammer":                           "Shell Hammer",
+  "sounds.old_as_end.hammer_attack":                        "Shell Hammer Attack",
+
+  "sounds.old_as_end.shell_hammer_snail_grunt_01":          "Shell Hammer Snail Grunt",
+  "sounds.old_as_end.shell_hammer_snail_grunt_02":          "Shell Hammer Snail Grunt",
+  "sounds.old_as_end.shell_hammer_snail_grunt_03":          "Shell Hammer Snail Grunt",
+  "sounds.old_as_end.shell_hammer_snail_step_01":           "Shell Hammer Snail Slide",
+  "sounds.old_as_end.shell_hammer_snail_step_02":           "Shell Hammer Snail Slide",
+  "sounds.old_as_end.shell_hammer_snail_step_03":           "Shell Hammer Snail Slide",
+  "sounds.old_as_end.shell_hammer_snail_hurt":              "Shell Hammer Snail Hurt",
+
+  "enchantment.old_as_end.slam":                            "Slam",
+
+  "effect.old_as_end.gravity":                              "Gravity",
+
+  "item.old_as_end.old_end_plate":                          "Old End Plate",
+  "item.old_as_end.old_end_stick":                          "Old End Stick",
+  "item.old_as_end.hammer_snail_shell":                     "Hammer Snail Shell",
+  "item.old_as_end.chorus_honey_bottle":                    "Chorus Honey Bottle",
+
+  "item.old_as_end.old_end_plated_helmet":                  "Old End Tiara",
+  "item.old_as_end.old_end_plated_chestplate":              "Old End Shoulder Pad",
+  "item.old_as_end.old_end_plated_leggings":                "Old End Belt",
+  "item.old_as_end.old_end_plated_boots":                   "Old End Sandals",
+
+  "block.old_as_end.gravitational_mucus_block":             "Gravitational Mucus Block",
+  "block.old_as_end.strange_mucus_block":                   "Strange Mucus",
+  "block.old_as_end.powered_strange_mucus_block":           "Powered Strange Mucus",
+  "block.old_as_end.ultra_powered_strange_mucus_block":     "Ultra Powered Strange Mucus",
+
+  "block.old_as_end.gravitational_mucus":                   "Gravitational Mucus Bottle",
+
+  "block.old_as_end.small_chorus_flower":                   "Chorus Flower",
+  "block.old_as_end.potted_small_chorus_flower":            "Potted Small Chorus Flower",
+  "block.old_as_end.chorus_honey_block":                    "Chorus Honey Block",
+  "block.old_as_end.old_end_alloy_block":                   "Old End Alloy Block",
+  "block.old_as_end.old_end_ore":                           "Old End Ore Block",
+
+  "block.old_as_end.crystallized_end_stone_pupa":           "Crystallized End Stone Pupa",
+  "block.old_as_end.crystallized_end_stone_hive":           "Crystallized End Stone Hive",
+
+  "block.old_as_end.crystallized_end_stone":                "Crystallized End Stone",
+  "block.old_as_end.crystallized_end_stone_bricks":         "Crystallized End Stone Bricks",
+  "block.old_as_end.crystallized_end_stone_bricks_slab":    "Crystallized End Stone Bricks Slab",
+  "block.old_as_end.crystallized_end_stone_bricks_wall":    "Crystallized End Stone Bricks Wall",
+  "block.old_as_end.crystallized_end_stone_bricks_stairs":  "Crystallized End Stone Bricks Stair",
+
+  "item.old_as_end.shell_hammer_snail_spawn_egg":           "Shell Hammer Snail Spawn Egg",
+  "item.old_as_end.end_mussel_spawn_egg":                   "End Mussel Spawn Egg",
+  "item.old_as_end.end_bee_spawn_egg":                      "End Bee Spawn Egg",
+
+  "entity.old_as_end.end_bee":                              "End Bee",
+  "entity.old_as_end.end_mussel":                           "End Mussel",
+  "entity.old_as_end.shell_hammer_snail":                   "Shell Hammer Snail",
+
+  "old_as_end.tab":                                         "Old as End",
+
+  "advancements.metallurgical.title":                       "Metallurgical",
+  "advancements.metallurgical.description":                 "Get a Oldend Ore",
+  "advancements.enderite.title":                            "Enderite",
+  "advancements.enderite.description":                      "Get or make your first Oldend Plate",
+
+  "advancements.get_away_from_me.title":                    "Get Away from Me!",
+  "advancements.get_away_from_me.description":              "Get a Shell Hammer",
+  "advancements.timber.title":                              "Timber!",
+  "advancements.timber.description":                         "Be affected by Gravity effect",
+
+  "advancements.the_end_and_the_bees.title":                "The End and the Bees?",
+  "advancements.the_end_and_the_bees.description":          "Make or get a Crystallized Pupa End Stone and place somewhere",
+
+  "advancements.on_another_level.title":                    "Interdimensional Honey",
+  "advancements.on_another_level.description":              "Get a Chorus Honey Bottle",
+  "advancements.first_aid.title":                           "First-Aid",
+  "advancements.first_aid.description":                     "Treat the Withering Effect by Drinking Chorus Honey",
+
+  "advancements.speeding_up.title":                         "Fast \u0026 Furious",
+  "advancements.speeding_up.description":                   "Pass Through the Strange Mucus Block",
+  "advancements.calm_down.title":                           "GAS GAS GAS",
+  "advancements.calm_down.description":                     "Pass Through the Powered Strange Mucus Block",
+  "advancements.gotta_go_fast.title":                       "Gotta Go Fast!",
+  "advancements.gotta_go_fast.description":                 "Pass Through the Place a Ultra Powered Strange Mucus Block"
+}

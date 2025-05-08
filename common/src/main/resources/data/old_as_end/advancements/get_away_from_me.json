@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "old_as_end:shell_hammer"
+    },
+    "title": {
+      "translate": "advancements.get_away_from_me.title"
+    },
+    "description": {
+      "translate": "advancements.get_away_from_me.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_away_from_me_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "old_as_end:shell_hammer"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "minecraft:end/enter_end_gateway"
+}

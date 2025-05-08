@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "old_as_end:blocks/old_end_ore",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "old_as_end:old_end_ore"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "old_as_end:custom/chorus_honey_block",
+  "textures": {
+    "all": "old_as_end:block/chorus_honey_block",
+    "particle": "old_as_end:block/chorus_honey_block",
+    "0": "old_as_end:block/chorus_honey_block_3d"
+  },
+  "render_type": "translucent"
+}

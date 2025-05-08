@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "old_as_end:old_end_ore"
+    },
+    "title": {
+      "translate": "advancements.metallurgical.title"
+    },
+    "description": {
+      "translate": "advancements.metallurgical.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "metallurgical_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "old_as_end:old_end_ore"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "minecraft:end/root"
+}

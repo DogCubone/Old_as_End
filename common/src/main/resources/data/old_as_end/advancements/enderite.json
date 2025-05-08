@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "old_as_end:old_end_plate"
+    },
+    "title": {
+      "translate": "advancements.enderite.title"
+    },
+    "description": {
+      "translate": "advancements.enderite.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "enderite_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "old_as_end:old_end_plate"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "old_as_end:metallurgical"
+}

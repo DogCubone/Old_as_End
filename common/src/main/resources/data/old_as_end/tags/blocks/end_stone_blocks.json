@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:end_stone",
+    "old_as_end:old_end_ore"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "old_as_end:crystallized_end_stone_pupa"
+    },
+    "title": {
+      "translate": "advancements.the_end_and_the_bees.title"
+    },
+    "description": {
+      "translate": "advancements.the_end_and_the_bees.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_end_and_the_bees_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "old_as_end:crystallized_end_stone_pupa"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 3
+  },
+  "parent": "minecraft:end/enter_end_gateway"
+}

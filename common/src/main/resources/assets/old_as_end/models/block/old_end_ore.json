@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "old_as_end:block/old_end_ore",
+    "particle": "old_as_end:block/old_end_ore"
+  }
+}

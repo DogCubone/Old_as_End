@@ -1,0 +1,9 @@
+{
+  "parent": "old_as_end:custom/strange_mucus_block",
+  "textures": {
+    "all": "old_as_end:block/ultra_powered_strange_mucus_block",
+    "particle": "old_as_end:block/ultra_powered_strange_mucus_block",
+    "0": "old_as_end:block/ultra_powered_strange_mucus_block"
+  },
+  "render_type": "translucent"
+}

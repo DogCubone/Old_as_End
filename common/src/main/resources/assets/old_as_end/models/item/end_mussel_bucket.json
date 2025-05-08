@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "old_as_end:item/end_mussel_bucket"
+  }
+}

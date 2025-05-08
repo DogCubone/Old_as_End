@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "old_as_end:crystallized_end_stone",
+    "old_as_end:crystallized_end_stone_bricks",
+    "old_as_end:crystallized_end_stone_bricks_slab",
+    "old_as_end:crystallized_end_stone_bricks_stairs",
+    "old_as_end:crystallized_end_stone_bricks_wall",
+    "old_as_end:old_end_ore",
+    "old_as_end:old_end_alloy_block"
+  ]
+}

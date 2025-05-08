@@ -1,0 +1,10 @@
+{
+  "parent": "old_as_end:custom/gravitational_mucus",
+  "textures": {
+    "all": "old_as_end:block/gravitational_mucus",
+    "particle": "old_as_end:block/gravitational_mucus",
+    "0": "old_as_end:block/gravitational_mucus",
+    "missing": "old_as_end:block/gravitational_mucus"
+  },
+  "render_type": "translucent"
+}

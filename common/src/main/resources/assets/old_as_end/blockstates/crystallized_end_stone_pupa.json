@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "eggs=1": {
+      "model": "old_as_end:block/crystallized_end_stone_pupa_single"
+    },
+    "eggs=2": {
+      "model": "old_as_end:block/crystallized_end_stone_pupa_half"
+    },
+    "eggs=3": {
+      "model": "old_as_end:block/crystallized_end_stone_pupa_full"
+    }
+  }
+}

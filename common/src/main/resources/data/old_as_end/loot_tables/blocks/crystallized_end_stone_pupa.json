@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "minecraft:silk_touch",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "block": "old_as_end:crystallized_end_stone_pupa",
+              "function": "minecraft:copy_state",
+              "properties": [
+                "eggs"
+              ]
+            }
+          ],
+          "name": "old_as_end:crystallized_end_stone_pupa"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

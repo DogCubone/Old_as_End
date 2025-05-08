@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "old_as_end:block/crystallized_end_stone_bricks",
+    "bottom": "old_as_end:block/crystallized_end_stone_bricks",
+    "top": "old_as_end:block/crystallized_end_stone_bricks",
+    "side": "old_as_end:block/crystallized_end_stone_bricks"
+  },
+  "render_type": "solid"
+}

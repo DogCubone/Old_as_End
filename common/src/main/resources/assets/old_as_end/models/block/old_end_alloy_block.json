@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "old_as_end:block/old_end_alloy_block",
+    "particle": "old_as_end:block/old_end_alloy_block"
+  }
+}

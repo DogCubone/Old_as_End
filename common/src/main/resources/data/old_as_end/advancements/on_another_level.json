@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "old_as_end:chorus_honey_bottle"
+    },
+    "title": {
+      "translate": "advancements.on_another_level.title"
+    },
+    "description": {
+      "translate": "advancements.on_another_level.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "on_another_level_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "old_as_end:the_end_and_the_bees"
+}

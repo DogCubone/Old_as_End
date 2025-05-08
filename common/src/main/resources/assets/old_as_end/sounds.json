@@ -1,0 +1,50 @@
+{
+  "hammer_attack": {
+    "subtitle": "sounds.old_as_end.hammer_attack",
+    "sounds": [
+      "old_as_end:hammer_attack"
+    ]
+  },
+  "shell_hammer_snail_hurt": {
+    "subtitle": "sounds.old_as_end.shell_hammer_snail_hurt",
+    "sounds": [
+      "old_as_end:shell_hammer_snail_hurt"
+    ]
+  },
+  "shell_hammer_snail_step_01": {
+    "subtitle": "sounds.old_as_end.shell_hammer_snail_step_01",
+    "sounds": [
+      "old_as_end:shell_hammer_snail_step_01"
+    ]
+  },
+  "shell_hammer_snail_step_02": {
+    "subtitle": "sounds.old_as_end.shell_hammer_snail_step_02",
+    "sounds": [
+      "old_as_end:shell_hammer_snail_step_02"
+    ]
+  },
+  "shell_hammer_snail_step_03": {
+    "subtitle": "sounds.old_as_end.shell_hammer_snail_step_03",
+    "sounds": [
+      "old_as_end:shell_hammer_snail_step_03"
+    ]
+  },
+  "shell_hammer_snail_grunt_01": {
+    "subtitle": "sounds.old_as_end.shell_hammer_snail_grunt_01",
+    "sounds": [
+      "old_as_end:shell_hammer_snail_grunt_01"
+    ]
+  },
+  "shell_hammer_snail_grunt_02": {
+    "subtitle": "sounds.old_as_end.shell_hammer_snail_grunt_02",
+    "sounds": [
+      "old_as_end:shell_hammer_snail_grunt_02"
+    ]
+  },
+  "shell_hammer_snail_grunt_03": {
+    "subtitle": "sounds.old_as_end.shell_hammer_snail_grunt_03",
+    "sounds": [
+      "old_as_end:shell_hammer_snail_grunt_03"
+    ]
+  }
+}

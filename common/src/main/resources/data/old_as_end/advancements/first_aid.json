@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "old_as_end:chorus_honey_bottle"
+    },
+    "title": {
+      "translate": "advancements.first_aid.title"
+    },
+    "description": {
+      "translate": "advancements.first_aid.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "first_aid": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "old_as_end:on_another_level"
+}
