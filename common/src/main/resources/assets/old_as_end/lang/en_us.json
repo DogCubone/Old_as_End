@@ -5,9 +5,11 @@
   "sounds.old_as_end.shell_hammer_snail_grunt_01":          "Shell Hammer Snail Grunt",
   "sounds.old_as_end.shell_hammer_snail_grunt_02":          "Shell Hammer Snail Grunt",
   "sounds.old_as_end.shell_hammer_snail_grunt_03":          "Shell Hammer Snail Grunt",
+
   "sounds.old_as_end.shell_hammer_snail_step_01":           "Shell Hammer Snail Slide",
   "sounds.old_as_end.shell_hammer_snail_step_02":           "Shell Hammer Snail Slide",
   "sounds.old_as_end.shell_hammer_snail_step_03":           "Shell Hammer Snail Slide",
+
   "sounds.old_as_end.shell_hammer_snail_hurt":              "Shell Hammer Snail Hurt",
 
   "enchantment.old_as_end.slam":                            "Slam",
@@ -79,5 +81,5 @@
   "advancements.calm_down.title":                           "GAS GAS GAS",
   "advancements.calm_down.description":                     "Pass Through the Powered Strange Mucus Block",
   "advancements.gotta_go_fast.title":                       "Gotta Go Fast!",
-  "advancements.gotta_go_fast.description":                 "Pass Through the Place a Ultra Powered Strange Mucus Block"
+  "advancements.gotta_go_fast.description":                 "Pass Through a Ultra Powered Strange Mucus Block"
 }

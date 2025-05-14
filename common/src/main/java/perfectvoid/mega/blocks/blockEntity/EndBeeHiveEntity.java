@@ -60,7 +60,7 @@ public class EndBeeHiveEntity extends BlockEntity {
 
             if (storedBees.get(this.beesInHive).isEmpty()) {
                 storedBees.add(this.beesInHive, beeNBT);
-                ticksUntilBeeLeaves[this.beesInHive ] = (hasNectar) ? minimumTicksToLeave + endBee.getWorld().random.nextInt(maximumExtraTicksToLeave) : minimumTicksToLeave;
+                ticksUntilBeeLeaves[this.beesInHive] = (hasNectar) ? minimumTicksToLeave + endBee.getWorld().random.nextInt(maximumExtraTicksToLeave) : minimumTicksToLeave;
             }
 
             ++this.beesInHive;

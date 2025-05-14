@@ -39,7 +39,7 @@ public class StrangeMucusBlock extends Block {
 
             //Makes so the mucus have a chain reaction once a limit remover is placed by its side.
             if (isMucusBlock(neighborState.getBlock()) && !neighborState.get(isLimited)) {
-                world.setBlockState(pos, state.with(isLimited, false), 3);
+                world.setBlockState(pos, state.with(isLimited, false));
               } else if (state != this.getDefaultState()) //tries to reset the block limit.
                   world.scheduleBlockTick(pos, this, 3);
         }
@@ -67,7 +67,7 @@ public class StrangeMucusBlock extends Block {
         }
     }
 
-    //simple code (that repeats a lot) that spawns particles according to the "allowed" direction
+    //simple code (that repeats a lot of times) that spawns particles according to the "allowed" direction
     protected static void spawnAtDirection(World world, BlockPos pos, Direction direction, Random random) {
 
         switch (direction) {
@@ -109,7 +109,7 @@ public class StrangeMucusBlock extends Block {
     }
 
     protected static boolean isMucusBlock(Block block) {
-        return block instanceof StrangeMucusBlock || block == BlocksAndItemsRegister.LIMITER_REMOVER.get();
+        return block instanceof StrangeMucusBlock || block.equals(BlocksAndItemsRegister.LIMITER_REMOVER.get());
     }
 
     @Override
@@ -120,22 +120,24 @@ public class StrangeMucusBlock extends Block {
         double velocityY = Math.abs(entity.getVelocity().y);
 
         boolean isFasterThanLimit = state.get(isLimited) && (velocityX > velocityLimit || velocityZ > velocityLimit || velocityY > velocityLimit);
+        if (entity.getVelocity().y < -0.9 && !entity.isOnGround()) entity.fallDistance += this.velocityMultiplier;
 
+        //Now it multiplies your speed instead of adding. This means you'll be at high speeds faster. Might be an issue if you go too fast.
         if (!isFasterThanLimit && !entity.isInSneakingPose()) {
-            entity.setVelocity(speedPly(velocityX, velocityZ, velocityY, entity.getVelocity(), velocityMultiplier + 1));
+            entity.setVelocity(speedPly(velocityX, velocityZ, velocityY, entity.getVelocity(), this.velocityMultiplier + 1));
 //            entity.setVelocity(speedUP(velocityX, velocityZ, velocityY, entity.getVelocity(), velocityMultiplier));
         }
     }
 
     //Trust me, it's way harder to make stuff go straight without this.
-    protected static Vec3d speedPly(double velX, double velZ, double velY, Vec3d baseVelocity, float velocityMulti) {
+    protected static Vec3d speedPly(double velX, double velZ, double velY, Vec3d baseVelocity, float velocityMultiplier) {
         if (velZ > 0.02)
-            velZ *= velocityMulti;
+            velZ *= velocityMultiplier;
         if (velX > 0.02)
-            velX *= velocityMulti;
+            velX *= velocityMultiplier;
         if (velY > 0.02) {
             velY += 0.05;
-            velY *= velocityMulti;
+            velY *= velocityMultiplier;
         }
 
         return new Vec3d(velX * Math.signum(baseVelocity.x), velY * Math.signum(baseVelocity.y), velZ * Math.signum(baseVelocity.z));

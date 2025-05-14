@@ -34,6 +34,7 @@ public class BlocksAndItemsRegister {
     public static final DeferredRegister<Block> blocks = DeferredRegister.create(old_as_end.MOD_ID, RegistryKeys.BLOCK);
     public static final DeferredRegister<BlockEntityType<?>> blockEntity = DeferredRegister.create(old_as_end.MOD_ID, RegistryKeys.BLOCK_ENTITY_TYPE);
 
+
     //region Block item Register
     private static RegistrySupplier<Item> bottleBlock(RegistrySupplier<Block> block, Item.Settings settings){
         return items.register(block.getId().getPath(), () -> new Mucus_Bottle(block.get(), settings));
@@ -66,7 +67,7 @@ public class BlocksAndItemsRegister {
 
     //region Mucus Block
     public static final RegistrySupplier<Block> GRAVITATIONAL_MUCUS                         = blocks.register("gravitational_mucus", () -> new GravitationalMucus(AbstractBlock.Settings.create().noCollision().mapColor(MapColor.PURPLE).jumpVelocityMultiplier(0).sounds(BlockSoundGroup.SLIME).dropsNothing()));
-    public static final RegistrySupplier<Block> GRAVITATIONAL_MUCUS_BLOCK                   = blocks.register("gravitational_mucus_block", ()-> new GravitationalMucusBlock(AbstractBlock.Settings.create().noCollision().mapColor(MapColor.PURPLE).jumpVelocityMultiplier(0).sounds(BlockSoundGroup.SLIME)));
+    public static final RegistrySupplier<Block> GRAVITATIONAL_MUCUS_BLOCK                   = blocks.register("gravitational_mucus_block", ()-> new GravitationalMucusBlock(AbstractBlock.Settings.create().noCollision().mapColor(MapColor.PURPLE).jumpVelocityMultiplier(0).velocityMultiplier(-0.3f).sounds(BlockSoundGroup.SLIME)));
     public static final RegistrySupplier<Block> STRANGE_MUCUS_BLOCK                         = blocks.register("strange_mucus_block", ()-> new StrangeMucusBlock(0.08f, 1.2f, (byte) 0, AbstractBlock.Settings.create().noCollision().mapColor(MapColor.PINK).sounds(BlockSoundGroup.HONEY)));
     public static final RegistrySupplier<Block> POWERED_STRANGE_MUCUS_BLOCK                 = blocks.register("powered_strange_mucus_block", ()-> new StrangeMucusBlock(0.18f, 7f, (byte) 4, AbstractBlock.Settings.create().noCollision().mapColor(MapColor.PALE_PURPLE).sounds(BlockSoundGroup.HONEY)));
     public static final RegistrySupplier<Block> ULTRA_POWERED_STRANGE_MUCUS_BLOCK           = blocks.register("ultra_powered_strange_mucus_block", ()-> new StrangeMucusBlock(0.26f, 15f, (byte) 8, AbstractBlock.Settings.create().noCollision().mapColor(MapColor.PURPLE).sounds(BlockSoundGroup.HONEY)));

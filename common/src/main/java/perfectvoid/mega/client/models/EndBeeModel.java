@@ -62,6 +62,6 @@ public class EndBeeModel extends SinglePartEntityModel<EndBee> {
 		this.getPart().traverse().forEach(ModelPart::resetTransform);
 
 		this.animateMovement(EntityAnimations.End_Bee_Fly, limbAngle, limbDistance, 1f, 2f);
-		this.updateAnimation(endBee.idleState, EntityAnimations.EndMussel_Idle, animationProgress);
+		this.updateAnimation(endBee.idleState, EntityAnimations.End_Bee_Idle, animationProgress);
 	}
 }

@@ -84,7 +84,7 @@ public class ShellHammerSnail extends PassiveEntity {
 
     @Override
     public void handleStatus(byte status) {
-        if (status == 1) this.attackState.start(this.age);
+        if (status == 4) this.attackState.start(this.age);
         super.handleStatus(status);
     }
 
@@ -108,7 +108,7 @@ public class ShellHammerSnail extends PassiveEntity {
 
     @Override
     public boolean tryAttack(Entity target) {
-        this.getWorld().sendEntityStatus(this, (byte) 1);
+        this.getWorld().sendEntityStatus(this, (byte) 4);
         return super.tryAttack(target);
     }
 
